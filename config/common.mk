@@ -60,9 +60,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     setupwizard.feature.locale_agnostic_enabled=true
 
 ifeq ($(PRODUCT_CHARACTERISTICS),tablet)
-PRODUCT_PRODUCT_PROPERTIES += ro.setupwizard.rotation_locked=false
+TARGET_PRODUCT_PROP += vendor/pixel-style/properties/tablet.prop
 else
-PRODUCT_PRODUCT_PROPERTIES += ro.setupwizard.rotation_locked=true
+TARGET_PRODUCT_PROP += vendor/pixel-style/properties/phone.prop
 endif
 
 # StorageManager configuration
